@@ -2,18 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: nxtkb
-      url-base: https://github.com/nxtkb
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 8feeb52
+      revision: main
       import: app/west.yml
-    - name: zmk-behavior-report
-      remote: nxtkb
-      revision: 476f43da1f98b4a6150c9c0e499a257bd64a29a0
-      import: west.yml
   self:
     path: config
