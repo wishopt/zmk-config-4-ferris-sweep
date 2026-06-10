@@ -5,7 +5,11 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 8feeb52
       import: app/west.yml
+    - name: zmk-behavior-report
+      remote: nxtkb
+      revision: 476f43da1f98b4a6150c9c0e499a257bd64a29a0
+      import: west.yml
   self:
     path: config
